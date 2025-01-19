@@ -23,6 +23,12 @@
 pip install torch torchvision transformers scikit-learn pandas Pillow
 ```
 
+或者通过requirements.txt安装
+
+```python
+pip install -r requirements.txt
+```
+
 ## 仓库结构
 仓库包含以下重要文件:
 
@@ -49,10 +55,10 @@ project/
 ├── train_split.txt
 ├── val_split.txt
 ├── train.txt
-├── test_without_label.txt
-├── best_multimodal_emotion_model.pth
-├── multimodal_emotion_model.pth
-└── requirements.txt  # 所需的库
+├── test_without_label.txt  
+├── best_multimodal_emotion_model.pth  # 运行train.py生成
+├── multimodal_emotion_model.pth       # 运行train.py生成
+└── requirements.txt   # 所需的库
 ```
 
 ## 模型架构
