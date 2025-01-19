@@ -57,7 +57,6 @@ project/
 
 ## 模型架构
 model.py 中的 MultimodalEmotionModel 类结合了 RoBERTa 和 ResNet-50 分别提取文本和图像特征，并通过注意力机制动态加权文本和图像特征，最后将加权后的特征传递给分类器。
-```
 
 
 ## 执行流程
@@ -66,9 +65,9 @@ model.py 中的 MultimodalEmotionModel 类结合了 RoBERTa 和 ResNet-50 分别
 python train.py
 ```
 该脚本将：
-从 train.txt 加载训练数据。
-预处理文本和图像数据。
-使用指定的超参数训练模型。
+从 train.txt 加载训练数据。  
+预处理文本和图像数据。  
+使用指定的超参数训练模型。  
 将最佳模型保存到 best_multimodal_emotion_model.pth。
 
 2. 要在测试数据上运行推理，请使用以下命令：
@@ -76,19 +75,19 @@ python train.py
 python run.py
 ```
 该脚本将：
-从 test_without_label.txt 加载测试数据。
-预处理文本和图像数据。
-从 best_multimodal_emotion_model.pth 加载训练好的模型。
-生成预测结果并保存到 predictions.csv。
+从 test_without_label.txt 加载测试数据。  
+预处理文本和图像数据。  
+从 best_multimodal_emotion_model.pth 加载训练好的模型。  
+生成预测结果并保存到 predictions.csv。  
 
 3. 要对模型进行消融研究，请运行：
 ```python
 python ablation_study.py
 ```
 该脚本将：
-从 val_split.txt 加载验证数据。
-评估模型在三种模式下的性能：多模态、仅文本和仅图像。
-打印每种模式的验证损失和准确率。
+从 val_split.txt 加载验证数据。  
+评估模型在三种模式下的性能：多模态、仅文本和仅图像。  
+打印每种模式的验证损失和准确率。  
 
 ## 引用
 
