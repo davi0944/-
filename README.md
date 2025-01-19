@@ -54,10 +54,11 @@ project/
 ├── ablation_study.py   # 用于对模型进行消融研究的脚本
 ├── train_split.txt
 ├── val_split.txt
-├── train.txt
+├── train.txt           # 初始训练文本
+├── predictions.csv     # 最后生成的预测文件
 ├── test_without_label.txt  
 ├── best_multimodal_emotion_model.pth  # 运行train.py生成
-└── requirements.txt   # 所需的库
+└── requirements.txt    # 所需的库
 ```
 
 ## 模型架构
