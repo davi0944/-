@@ -57,7 +57,6 @@ project/
 ├── train.txt
 ├── test_without_label.txt  
 ├── best_multimodal_emotion_model.pth  # 运行train.py生成
-├── multimodal_emotion_model.pth       # 运行train.py生成
 └── requirements.txt   # 所需的库
 ```
 
